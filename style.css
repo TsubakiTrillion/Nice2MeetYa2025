@@ -36,6 +36,7 @@ h1 {
     font-weight: 400;
     font-size: 40px;
     font-style: normal;
+    line-height: 3;
 }
 
 p1 {
@@ -45,7 +46,7 @@ p1 {
     font-style: normal;
 }
 
-button {
+.start-button {
     display: inline-block;
     padding: 15px 25px;
     font-family: "Bai Jamjuree", sans-serif;
@@ -63,7 +64,12 @@ button {
     box-shadow: 0 9px #999;
 }
 
-button:active {
+.start-button:hover {
+    background-color: #4d2509;
+    color: #d9c9ba;
+}
+
+.start-button:active {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }

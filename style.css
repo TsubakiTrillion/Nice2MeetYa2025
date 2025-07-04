@@ -16,20 +16,6 @@ body {
     color: azure;
 }
 
-h1 {
-    font-family: "Harry P", sans-serif;
-    font-weight: 400;
-    font-size: 40px;
-    font-style: normal;
-}
-
-h2 {
-    font-family: "Harry P", sans-serif;
-    font-weight: 300;
-    font-size: 28px;
-    font-style: normal;
-}
-
 .page {
     display: none;
     flex-direction: column;
@@ -43,6 +29,20 @@ h2 {
 
 .result {
     font-size: 40px;
+}
+
+h1 {
+    font-family: "Harry P", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
+}
+
+p1 {
+    font-family: "Harry P", sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    font-style: normal;
 }
 
 button {

@@ -2,6 +2,12 @@ const totalPages = 10;
 let currentPage = 0;
 let score = 0;
 let namelist = [];
+const namePage = document.getElementById('name');
+if (namePage) {
+  namePage.classList.add('active');
+} else {
+  console.error("ไม่พบ element ที่มี id='name'");
+}
 
 const quizContainer = document.getElementById('quizContainer');
 

@@ -73,7 +73,8 @@ function countScore(value) {
 
 function Typename(namelist)
 {
-    
+    <input id="nameInput" placeholder="กรอกชื่อ">
+<button onclick="saveName()">บันทึกชื่อ</button>
 }
 function showAnswer(score) {
     if (score >= 0 && score <= 7){

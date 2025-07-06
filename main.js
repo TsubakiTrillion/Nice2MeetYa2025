@@ -65,7 +65,7 @@ function countScore(value) {
     if (currentPage < totalPages) {
         showPage(currentPage);
     } else {
-        document.getElementById('Name').classList.add('active');
+        document.getElementById('Names').classList.add('active');
         document.getElementById('type').classList.add('active'); 
     }
 }
@@ -74,10 +74,14 @@ function countScore(value) {
         clicked = true;
         if(clicked = true)
         {
-            document.getElementById('Name').classList.remove('active');
+            document.getElementById('Names').classList.remove('active');
         document.getElementById('type').classList.remove('active');
             document.getElementById('resultPage').classList.add('active');
         document.getElementById('finalScore').innerText = showAnswer(score);
+        }
+            else
+        {
+            console.log("error");
         }
 });
    

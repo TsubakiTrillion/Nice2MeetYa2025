@@ -2,6 +2,7 @@ const totalPages = 10;
 let currentPage = 0;
 let score = 0;
 let namelist = [];
+let Clicked = false;
 
 const quizContainer = document.getElementById('quizContainer');
 
@@ -66,9 +67,17 @@ function countScore(value) {
     } else {
         document.getElementById('name').classList.add('active');
         document.getElementById('type').classList.add('active');
-        document.getElementById('type').innerText = Savename();
-        document.getElementById('resultPage').classList.add('active');
+       document.getElementById('submitname').addEventListener('click',function() 
+        {
+        clicked = true;
+        if(clicked = true)
+        {
+            document.getElementById('Name').classList.remove('active');
+        document.getElementById('type').classList.remove('active');
+            document.getElementById('resultPage').classList.add('active');
         document.getElementById('finalScore').innerText = showAnswer(score);
+        }
+});
     }
 }
 

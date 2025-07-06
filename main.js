@@ -64,7 +64,7 @@ function countScore(value) {
     if (currentPage < totalPages) {
         showPage(currentPage);
     } else {
-
+        document.getElementById('name').classList.add('active');
         document.getElementById('type').innerText = Typename();
         document.getElementById('resultPage').classList.add('active');
         document.getElementById('finalScore').innerText = showAnswer(score);

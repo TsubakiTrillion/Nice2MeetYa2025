@@ -66,15 +66,34 @@ function countScore(value) {
     score += value;
     hidePage(currentPage);
     currentPage++;
+    
     if (currentPage < totalPages) {
         showPage(currentPage);
     } else {
-        document.getElementById('name').classList.add('active');
-        document.getElementById('type').innerText = Typename();
-        document.getElementById('resultPage').classList.add('active');
-        document.getElementById('finalScore').innerText = showAnswer(score);
+        const nameElement = document.getElementById('name');
+        if (nameElement) {
+            nameElement.classList.add('active');
+        } else {
+            console.error("ไม่พบ element ที่มี id='name'");
+        }
+
+        const typeElement = document.getElementById('type');
+        if (typeElement) {
+            typeElement.innerText = Typename();
+        }
+
+        const resultPage = document.getElementById('resultPage');
+        if (resultPage) {
+            resultPage.classList.add('active');
+        }
+
+        const scoreElement = document.getElementById('finalScore');
+        if (scoreElement) {
+            scoreElement.innerText = showAnswer(score);
+        }
     }
 }
+
 function Typename(namelist)
 {
     

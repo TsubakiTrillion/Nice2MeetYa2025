@@ -1,6 +1,7 @@
 const totalPages = 10;
 let currentPage = 0;
 let score = 0;
+let namelist = [];
 
 const quizContainer = document.getElementById('quizContainer');
 
@@ -62,11 +63,16 @@ function countScore(value) {
     if (currentPage < totalPages) {
         showPage(currentPage);
     } else {
+        document.getElementById('name').classlist.add('active');
+        document.getElementById('type').innerText = Typename();
         document.getElementById('resultPage').classList.add('active');
         document.getElementById('finalScore').innerText = showAnswer(score);
     }
 }
-
+function Typename(namelist)
+{
+    
+}
 function showAnswer(score) {
     if (score >= 0 && score <= 7){
         return "บ้าน A";

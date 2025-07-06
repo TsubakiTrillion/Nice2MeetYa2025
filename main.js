@@ -65,16 +65,16 @@ function countScore(value) {
         showPage(currentPage);
     } else {
         document.getElementById('name').classList.add('active');
-        document.getElementById('type').innerText = Typename();
+        document.getElementById('type').innerText = Savename();
         document.getElementById('resultPage').classList.add('active');
         document.getElementById('finalScore').innerText = showAnswer(score);
     }
 }
 
-function Typename(namelist)
-{
-    <input id="nameInput" placeholder="กรอกชื่อ">
-<button onclick="saveName()">บันทึกชื่อ</button>
+function saveName() {
+    let input = document.getElementById("nameInput");
+    let name = input.value;
+    nameList.push(name);
 }
 function showAnswer(score) {
     if (score >= 0 && score <= 7){

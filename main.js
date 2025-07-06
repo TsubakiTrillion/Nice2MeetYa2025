@@ -66,7 +66,9 @@ function countScore(value) {
         showPage(currentPage);
     } else {
         document.getElementById('Name').classList.add('active');
-        document.getElementById('type').classList.add('active');
+        document.getElementById('type').classList.add('active'); 
+    }
+}
        document.getElementById('submitname').addEventListener('click',function() 
         {
         clicked = true;
@@ -78,8 +80,7 @@ function countScore(value) {
         document.getElementById('finalScore').innerText = showAnswer(score);
         }
 });
-    }
-}
+   
 
 function saveName() {
     let input = document.getElementById("nameInput");

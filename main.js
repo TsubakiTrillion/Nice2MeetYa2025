@@ -65,6 +65,7 @@ function countScore(value) {
         showPage(currentPage);
     } else {
         document.getElementById('name').classList.add('active');
+        document.getElementById('type').classList.add('active');
         document.getElementById('type').innerText = Savename();
         document.getElementById('resultPage').classList.add('active');
         document.getElementById('finalScore').innerText = showAnswer(score);

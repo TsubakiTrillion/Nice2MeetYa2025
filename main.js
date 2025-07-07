@@ -3,6 +3,7 @@ let currentPage = 0;
 let score = 0;
 let namelist = [];
 let Clicked = false;
+let Idstudent=[6801001,6801300]
 
 const quizContainer = document.getElementById('quizContainer');
 

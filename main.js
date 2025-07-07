@@ -102,7 +102,7 @@ if (
     users.push({name:userName,id:userId,House:userHouse});
    localStorage.setItem('users', JSON.stringify(users));
 console.log("ข้อมูลของทุกคน:", users);
-document.getElementById("Name").classList.remove("active");
+    document.getElementById("Names").classList.remove("active");
     document.getElementById("type").classList.remove("active");
     document.getElementById("resultPage").classList.add("active");
     document.getElementById("finalScore").innerText = showAnswer(score);

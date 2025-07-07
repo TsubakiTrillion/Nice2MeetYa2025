@@ -69,20 +69,42 @@ function countScore(value) {
         document.getElementById('type').classList.add('active'); 
     }
 }
-       document.getElementById('submitname').addEventListener('click',function() 
-        {
-        clicked = true;
-        if(clicked = true)
-        {
-            document.getElementById('Names').classList.remove('active');
-        document.getElementById('type').classList.remove('active');
-            document.getElementById('resultPage').classList.add('active');
-        document.getElementById('finalScore').innerText = showAnswer(score);
-        }
-            else
-        {
-            console.log("error");
-        }
+       document.getElementById("submitname").addEventListener("click", function () {
+    
+    let userName = document.getElementById("nameInput").value.trim();
+    let userId = document.getElementById("StudentId").value.trim();
+    let userHouse = showAnswer(score);
+    if (!userName || !userId) {
+    alert("กรุณากรอกชื่อและรหัสให้ครบ");
+    return;
+}
+    let isDuplicate = users.some(user => user.id&&user.id.toLowerCase() === userId.toLowerCase());
+    if (isDuplicate) {
+        alert("รหัสนี้ถูกใช้ไปแล้ว กรุณากรอกชื่อใหม่");
+         document.getElementById('StudentId').value = '';
+        document.getElementById('StudentId').focus();
+        return;
+    }
+    let idNumber = parseInt(userId, 10);
+if (
+    isNaN(idNumber) || 
+    userId.length !== 7 || 
+    idNumber < 6801001 || 
+    idNumber > 6801300
+) {
+    alert("กรุณากรอกรหัสนักศึกษาให้ถูกต้อง");
+    document.getElementById("StudentId").value = '';
+    document.getElementById("StudentId").focus();
+    return;
+}
+    users.push({name:userName,id:userId,House:userHouse});
+   localStorage.setItem('users', JSON.stringify(users));
+console.log("ข้อมูลของทุกคน:", users);
+document.getElementById("Name").classList.remove("active");
+    document.getElementById("type").classList.remove("active");
+    document.getElementById("resultPage").classList.add("active");
+    document.getElementById("finalScore").innerText = showAnswer(score);
+
 });
    
 

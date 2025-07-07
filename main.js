@@ -1,6 +1,7 @@
 const totalPages = 10;
 let currentPage = 0;
 let score = 0;
+let users =[];
 let namelist = [];
 let Clicked = false;
 let Idstudent=[6801001,6801300]

@@ -4,9 +4,9 @@ let score = 0;
 let users = [];
 let namelist = [];
 let Clicked = false;
-let Idstudent = [6801001,6801300];
+let Idstudent = [6801001, 6801300];
 
-const quizContainer = document.getElementById('quizContainer');
+const quizContainer = document.getElementById("quizContainer");
 
 const listQuiz = [
   {
@@ -15,9 +15,9 @@ const listQuiz = [
       "รับหน้าที่ประสานงานและวางโครงสร้างทั้งภาพรวม",
       "ศึกษาเรื่องการทำหนังสั้นเชิงลึกและจัดระบบงานที่ทำได้จริง",
       "คอยสังเกตว่าใครถนัดอะไร แล้วค่อยเสนอไอเดีย",
-      "อาสาทำส่วนยากที่สุดและให้กำลังใจเพื่อนในกลุ่ม"
+      "อาสาทำส่วนยากที่สุดและให้กำลังใจเพื่อนในกลุ่ม",
     ],
-    score: [1, 0, 2, 3]
+    score: [1, 0, 2, 3],
   },
   {
     question: "หากเพื่อนของคุณอกหักแล้วมาปรึกษาคุณ คุณจะตอบว่า…",
@@ -25,9 +25,9 @@ const listQuiz = [
       "“มันเจ็บก็จริงนะ แต่เวลาจะเยียวยาทุกอย่างเอง เชื่อเราเถอะ”",
       "“อยากเล่าอะไรก็เล่าเลยนะ เราฟังอยู่ หรือถ้าไม่อยากพูดเราพร้อมจะนั่งข้าง ๆ แกนะ”",
       "“มานั่งคุยกัน เดี๋ยวเรามาทบทวนกันว่าทำไมมันถึงเจ็บ และจะผ่านมันไปยังไง”",
-      "“แกเก่งมากแล้วนะที่มาถึงตรงนี้ เดี๋ยวเราไปหาอะไรกิน แล้วทำอะไรสนุกๆ กัน!“"
+      "“แกเก่งมากแล้วนะที่มาถึงตรงนี้ เดี๋ยวเราไปหาอะไรกิน แล้วทำอะไรสนุกๆ กัน!“",
     ],
-    score: [3, 2, 0, 1]
+    score: [3, 2, 0, 1],
   },
   {
     question: "ในช่วงปิดเทอมหรือหยุดยาว คุณมักจะใช้เวลาไปกับ…",
@@ -35,9 +35,9 @@ const listQuiz = [
       "สมัครงานอาสาหรือทำกิจกรรมนักศึกษา",
       "ลองฝึกทักษะใหม่ ๆ ด้วยตัวเองแบบจริงจัง",
       "อ่านหนังสือที่ไม่ใช่ตำราหรือดูซีรีส์ที่ช่วยเปิดโลกทัศน์ใหม่ ๆ",
-      "เข้าร่วมเวิร์กช็อป สัมมนาหรือคุยกับอาจารย์รุ่นพี่เพื่อหาแรงบันดาลใจ"
+      "เข้าร่วมเวิร์กช็อป สัมมนาหรือคุยกับอาจารย์รุ่นพี่เพื่อหาแรงบันดาลใจ",
     ],
-    score: [3, 0, 2, 1]
+    score: [3, 0, 2, 1],
   },
   {
     question: "เมื่อมีงานกลุ่มที่ต้องพรีเซนต์หน้าห้อง คุณจะ…",
@@ -45,9 +45,9 @@ const listQuiz = [
       "เสนอให้คนที่เหมาะสมที่สุดรับหน้าที่ โดยคุณคอยซัพพอร์ตเบื้องหลัง",
       "วางสคริปต์แบบมีเหตุมีผลให้คนอื่นไปพูด",
       "เสนอตัวพูดให้แม้จะไม่ได้เตรียมมาก แต่ขอให้ทีมมั่นใจ",
-      "เขียนโฟลว์และจัดลำดับภาพรวมให้พรีเซนต์ออกมาลื่นไหล"
+      "เขียนโฟลว์และจัดลำดับภาพรวมให้พรีเซนต์ออกมาลื่นไหล",
     ],
-    score: [2, 0, 3, 1]
+    score: [2, 0, 3, 1],
   },
   {
     question: "ถ้าคุณรู้สึกขัดแย้งในกลุ่มเพื่อน คุณจะ…",
@@ -55,9 +55,9 @@ const listQuiz = [
       "พูดออกไปตรงๆ เพื่อให้เคลียร์และเดินหน้าต่อ",
       "ไกล่เกลี่ยให้ทุกคนฟังกันและคืนดีกันได้",
       "ถอยออกมาคิดก่อน แล้วค่อยกลับไปด้วยมุมมองใหม่",
-      "คุยกับแต่ละคนแยกกันแล้วเสนอแนวทางแก้"
+      "คุยกับแต่ละคนแยกกันแล้วเสนอแนวทางแก้",
     ],
-    score: [3, 1, 2, 0]
+    score: [3, 1, 2, 0],
   },
   {
     question: "ถ้าเพื่อนมาขอให้ช่วยติว คุณจะ…",
@@ -65,9 +65,9 @@ const listQuiz = [
       "ติวแบบเน้นแก่น ไม่ท่องจำ พร้อมแชร์ประสบการณ์จริง",
       "สรุปเนื้อหาเป็นระบบและสอนแบบมีขั้นตอน",
       "ออกแบบแผนการติวให้เข้าใจง่ายและช่วยกระตุ้นความอยากเรียน",
-      "ช่วยตีความโจทย์ยาก ๆ และตั้งคำถามให้คิดลึกขึ้น"
+      "ช่วยตีความโจทย์ยาก ๆ และตั้งคำถามให้คิดลึกขึ้น",
     ],
-    score: [3, 0, 1, 2]
+    score: [3, 0, 1, 2],
   },
   {
     question: "คุณมักได้รับคำชมจากคนอื่นว่า…",
@@ -75,19 +75,20 @@ const listQuiz = [
       "แม่นยำ มีเหตุผล วางแผนดีเยี่ยม",
       "เข้าใจลึกแต่ไม่พูดมาก มองอะไรทะลุ",
       "โน้มน้าวเก่ง เข้าหาผู้คนเก่ง",
-      "กล้าตัดสินใจ กล้าเสียสละ"
+      "กล้าตัดสินใจ กล้าเสียสละ",
     ],
-    score: [0, 2, 1, 3]
+    score: [0, 2, 1, 3],
   },
   {
-    question: "ถ้าคุณได้รับหน้าที่เป็นบัดดี้ดูแลนักศึกษาต่างชาติแต่พวกเขาดูไม่อยากร่วมกิจกรรม คุณจะ…",
+    question:
+      "ถ้าคุณได้รับหน้าที่เป็นบัดดี้ดูแลนักศึกษาต่างชาติแต่พวกเขาดูไม่อยากร่วมกิจกรรม คุณจะ…",
     choice: [
       "ชวนคุยเป็นการส่วนตัว เพื่อเข้าใจเหตุผลเบื้องหลังและรู้สึกปลอดภัย",
       "วางแผนกิจกรรมเล็กๆ ที่ไม่กดดัน เช่น พาทัวร์คณะ พร้อมเตรียมแผนสำรอง",
       "เล่าเรื่องประสบการณ์ของเพื่อนต่างชาติคนอื่นที่เคยรู้สึกแบบเดียวกัน",
-      "ยืนยันจะอยู่ข้างเขาให้ไม่รู้สึกโดดเดี่ยว"
+      "ยืนยันจะอยู่ข้างเขาให้ไม่รู้สึกโดดเดี่ยว",
     ],
-    score: [2, 0, 1, 3]
+    score: [2, 0, 1, 3],
   },
   {
     question: "ถ้าเพื่อนและคุณกำลังเดินกลับหอพัก แล้วพบว่าน้ำท่วม คุณจะ…",
@@ -95,9 +96,9 @@ const listQuiz = [
       "รีบหาข้อมูลเลี่ยงจากรุ่นพี่ แล้วนำทางทุกคนกลับโดยปลอดภัย",
       "พยายามทำให้สถานการณ์ไม่เครียด แล้วหาทางข้ามน้ำ",
       "สังเกตระดับน้ำและพฤติกรรมคนรอบข้างก่อนเสนอวิธีการ",
-      "อาสาเดินลุยน้ำสำรวจทางก่อนให้มั่นใจว่าปลอดภัย แม้ตัวเองจะเปียกก็ตาม"
+      "อาสาเดินลุยน้ำสำรวจทางก่อนให้มั่นใจว่าปลอดภัย แม้ตัวเองจะเปียกก็ตาม",
     ],
-    score: [0, 1, 2, 3]
+    score: [0, 1, 2, 3],
   },
   {
     question: "คุณอยากเป็นที่จดจำว่าเป็น…",
@@ -105,107 +106,106 @@ const listQuiz = [
       "ผู้กล้าที่ไม่กลัวการเปลี่ยนแปลง",
       "นักคิดที่สร้างสิ่งใหม่อย่างเงียบๆ",
       "นักสังเกตการณ์ลึกซึ้งผู้ไขปริศนา",
-      "ผู้นำที่ดึงศักยภาพของผู้อื่นได้"
+      "ผู้นำที่ดึงศักยภาพของผู้อื่นได้",
     ],
-    score: [3, 0, 2, 1]
-  }
+    score: [3, 0, 2, 1],
+  },
 ];
 
 for (let i = 0; i < totalPages; i++) {
+  const page = document.createElement("div");
+  page.className = "page";
+  page.id = `page${i}`;
+  page.innerHTML =
+    "<style: font-size:24px>" + listQuiz[i].question + "</style>" + "</br>";
 
-    const page = document.createElement('div');
-    page.className = 'page';
-    page.id = `page${i}`;
-    page.innerHTML = "<style: font-size:24px>" + listQuiz[i].question + "</style>" +  "</br>";
+  for (let j = 0; j < 4; j++) {
+    const button = document.createElement("button");
+    button.innerHTML = listQuiz[i].choice[j];
+    button.className = "start-button";
+    button.onclick = () => countScore(j);
+    page.appendChild(button);
+  }
 
-    for (let j = 0; j < 4; j++) {
-        const button = document.createElement('button');
-        button.innerHTML = listQuiz[i].choice[j];
-        button.className = "start-button";
-        button.onclick = () => countScore(j);
-        page.appendChild(button);
-    }
-
-    quizContainer.appendChild(page);
+  quizContainer.appendChild(page);
 }
 
 function startQuiz() {
-    document.getElementById('startPage').classList.remove('active');
-    showPage(currentPage);
+  document.getElementById("startPage").classList.remove("active");
+  showPage(currentPage);
 }
 
 function showPage(index) {
-    document.getElementById(`page${index}`).classList.add('active');
+  document.getElementById(`page${index}`).classList.add("active");
 }
 
 function hidePage(index) {
-    document.getElementById(`page${index}`).classList.remove('active');
+  document.getElementById(`page${index}`).classList.remove("active");
 }
 
 function countScore(value) {
-    score += value;
-    hidePage(currentPage);
-    currentPage++;
-    
-    if (currentPage < totalPages) {
-        showPage(currentPage);
-    } else {
-        document.getElementById('Names').classList.add('active');
-        document.getElementById('type').classList.add('active'); 
-    }
+  score += value;
+  hidePage(currentPage);
+  currentPage++;
+
+  if (currentPage < totalPages) {
+    showPage(currentPage);
+  } else {
+    document.getElementById("Names").classList.add("active");
+    document.getElementById("type").classList.add("active");
+  }
 }
-       document.getElementById("submitname").addEventListener("click", function () {
-    
-    let userName = document.getElementById("nameInput").value.trim();
-    let userId = document.getElementById("StudentId").value.trim();
-    let userHouse = showAnswer(score);
-    if (!userName || !userId) {
+document.getElementById("submitname").addEventListener("click", function () {
+  let userName = document.getElementById("nameInput").value.trim();
+  let userId = document.getElementById("StudentId").value.trim();
+  let userHouse = showAnswer(score);
+  if (!userName || !userId) {
     alert("กรุณากรอกชื่อและรหัสให้ครบ");
     return;
-}
-    let isDuplicate = users.some(user => user.id&&user.id.toLowerCase() === userId.toLowerCase());
-    if (isDuplicate) {
-        alert("รหัสนี้ถูกใช้ไปแล้ว กรุณากรอกชื่อใหม่");
-         document.getElementById('StudentId').value = '';
-        document.getElementById('StudentId').focus();
-        return;
-    }
-    let idNumber = parseInt(userId, 10);
-if (
-    isNaN(idNumber) || 
-    userId.length !== 7 || 
-    idNumber < 6801001 || 
-    idNumber > 6801300
-) {
-    alert("กรุณากรอกรหัสนักศึกษาให้ถูกต้อง");
-    document.getElementById("StudentId").value = '';
+  }
+  let isDuplicate = users.some(
+    (user) => user.id && user.id.toLowerCase() === userId.toLowerCase()
+  );
+  if (isDuplicate) {
+    alert("รหัสนี้ถูกใช้ไปแล้ว กรุณากรอกชื่อใหม่");
+    document.getElementById("StudentId").value = "";
     document.getElementById("StudentId").focus();
     return;
-}
-    users.push({name:userName,id:userId,House:userHouse});
-   localStorage.setItem('users', JSON.stringify(users));
-console.log("ข้อมูลของทุกคน:", users);
-    document.getElementById("Names").classList.remove("active");
-    document.getElementById("type").classList.remove("active");
-    document.getElementById("resultPage").classList.add("active");
-    document.getElementById("finalScore").innerText = showAnswer(score);
-
+  }
+  let idNumber = parseInt(userId, 10);
+  if (
+    isNaN(idNumber) ||
+    userId.length !== 7 ||
+    idNumber < 6801001 ||
+    idNumber > 6801300
+  ) {
+    alert("กรุณากรอกรหัสนักศึกษาให้ถูกต้อง");
+    document.getElementById("StudentId").value = "";
+    document.getElementById("StudentId").focus();
+    return;
+  }
+  users.push({ name: userName, id: userId, House: userHouse });
+  localStorage.setItem("users", JSON.stringify(users));
+  console.log("ข้อมูลของทุกคน:", users);
+  document.getElementById("Names").classList.remove("active");
+  document.getElementById("type").classList.remove("active");
+  document.getElementById("resultPage").classList.add("active");
+  document.getElementById("finalScore").innerText = showAnswer(score);
 });
-   
 
 function saveName() {
-    let input = document.getElementById("nameInput");
-    let name = input.value;
-    nameList.push(name);
+  let input = document.getElementById("nameInput");
+  let name = input.value;
+  nameList.push(name);
 }
 function showAnswer(score) {
-    if (score >= 0 && score <= 7){
-        return "Alchemoir";
-    } else if (score >= 8 && score <= 15){
-        return "Verdanthorn";
-    } else if (score >= 16 && score <= 23){
-        return "Noxmortha";
-    } else if (score >= 24 && score <= 30){
-        return "Arcarum";
-    }
+  if (score >= 0 && score <= 7) {
+    return "Alchemoir";
+  } else if (score >= 8 && score <= 15) {
+    return "Verdanthorn";
+  } else if (score >= 16 && score <= 23) {
+    return "Noxmortha";
+  } else if (score >= 24 && score <= 30) {
+    return "Arcarum";
+  }
 }

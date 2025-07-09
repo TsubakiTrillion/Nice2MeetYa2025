@@ -1,81 +1,81 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
-@import url('https://fonts.cdnfonts.com/css/harry-p');
+@import url("https://fonts.cdnfonts.com/css/harry-p");
 
 body {
-    font-family: "Bai Jamjuree", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #6e4f32;
-    color: azure;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #6e4f32;
+  color: azure;
 }
 
 .page {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .page.active {
-    display: flex;
+  display: flex;
 }
 
 .result {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 p1 {
-    font-family: "Harry P", sans-serif;
-    font-weight: 400;
-    font-size: 40px;
-    font-style: normal;
-    line-height: 1;
+  font-family: "Harry P", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  font-style: normal;
+  line-height: 1;
 }
 
 p2 {
-    font-family: "Harry P", sans-serif;
-    font-weight: 300;
-    font-size: 28px;
-    font-style: normal;
+  font-family: "Harry P", sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+  font-style: normal;
 }
 
 .top-image {
-    width: 50%;
-    object-fit: cover;
+  width: 50%;
+  object-fit: cover;
 }
 
 .aboutusBox {
-    width: 75vw;
+  width: 75vw;
 }
 
 .start-button {
-    display: inline-block;
-    padding: 15px 25px;
-    font-family: "Bai Jamjuree", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #4d2509;
-    background-color: #d9c9ba;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
+  display: inline-block;
+  padding: 15px 25px;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #4d2509;
+  background-color: #d9c9ba;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
 }
 
 .start-button:hover {
-    background-color: #4d2509;
-    color: #d9c9ba;
+  background-color: #4d2509;
+  color: #d9c9ba;
 }
 
 .start-button:active {
@@ -84,27 +84,27 @@ p2 {
 }
 
 .quiz-button {
-    display: inline-block;
-    padding: 15px 25px;
-    font-family: "Bai Jamjuree", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    width: 10%;
-    color: #4d2509;
-    background-color: #d9c9ba;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
+  display: inline-block;
+  padding: 15px 25px;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  width: 10%;
+  color: #4d2509;
+  background-color: #d9c9ba;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
 }
 
 .quiz-button:hover {
-    background-color: #4d2509;
-    color: #d9c9ba;
+  background-color: #4d2509;
+  color: #d9c9ba;
 }
 
 .quiz-button:active {

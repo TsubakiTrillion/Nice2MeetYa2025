@@ -77,3 +77,32 @@ p1 {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
+.quiz-button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    width: 50%;
+    color: #4d2509;
+    background-color: #d9c9ba;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.quiz-button:hover {
+    background-color: #4d2509;
+    color: #d9c9ba;
+}
+
+.quiz-button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

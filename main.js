@@ -6,6 +6,10 @@ let namelist = [];
 let Clicked = false;
 let Idstudent = [6801001, 6801300];
 
+if (localStorage.getItem('users')) {
+    users = JSON.parse(localStorage.getItem('users'));
+}
+
 const quizContainer = document.getElementById("quizContainer");
 
 const listQuiz = [

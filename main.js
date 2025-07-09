@@ -4,7 +4,7 @@ let score = 0;
 let users = [];
 let namelist = [];
 let Clicked = false;
-let Idstudent=[6801001,6801300]
+let Idstudent = [6801001,6801300];
 
 const quizContainer = document.getElementById('quizContainer');
 
@@ -116,7 +116,7 @@ for (let i = 0; i < totalPages; i++) {
     const page = document.createElement('div');
     page.className = 'page';
     page.id = `page${i}`;
-    page.innerHTML = listQuiz[i].question;
+    page.innerHTML = "<style: font-size:24px>" + listQuiz[i].question + "</style>" +  "</br>";
 
     for (let j = 0; j < 4; j++) {
         const button = document.createElement('button');

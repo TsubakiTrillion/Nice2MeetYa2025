@@ -46,6 +46,11 @@ p2 {
     font-style: normal;
 }
 
+.top-image {
+    width: 50%;
+    object-fit: cover;
+}
+
 .aboutusBox {
     width: 75vw;
 }
@@ -89,7 +94,7 @@ p2 {
     text-align: center;
     text-decoration: none;
     outline: none;
-    width: 50%;
+    width: 10%;
     color: #4d2509;
     background-color: #d9c9ba;
     border: none;

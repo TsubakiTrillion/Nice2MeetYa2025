@@ -121,6 +121,7 @@ for (let i = 0; i < totalPages; i++) {
     for (let j = 0; j < 4; j++) {
         const button = document.createElement('button');
         button.innerHTML = listQuiz[i].choice[j];
+        button.className = "start-button";
         button.onclick = () => countScore(j);
         page.appendChild(button);
     }
@@ -199,12 +200,12 @@ function saveName() {
 }
 function showAnswer(score) {
     if (score >= 0 && score <= 7){
-        return "บ้าน A";
+        return "Alchemoir";
     } else if (score >= 8 && score <= 15){
-        return "บ้าน B";
+        return "Verdanthorn";
     } else if (score >= 16 && score <= 23){
-        return "บ้าน C";
+        return "Noxmortha";
     } else if (score >= 24 && score <= 30){
-        return "บ้าน D";
+        return "Arcarum";
     }
 }

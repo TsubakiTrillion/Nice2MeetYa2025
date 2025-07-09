@@ -111,3 +111,23 @@ p2 {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+#nameInput {
+  display: inline-block;
+  padding: 12px 18px;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  background-color: #f4ece5;
+  color: #4d2509;
+  box-shadow: 0 4px #cbb9aa;
+  margin-bottom: 15px;
+  outline: none;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+#nameInput:focus {
+  box-shadow: 0 0 0 3px #d9c9ba, 0 4px #cbb9aa;
+  border: 1.5px solid #b58e6b;
+  background-color: #fffaf5;
+}

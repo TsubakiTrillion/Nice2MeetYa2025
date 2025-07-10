@@ -56,7 +56,7 @@ const listQuiz = [
   {
     question: "ถ้าคุณรู้สึกขัดแย้งในกลุ่มเพื่อน คุณจะ…",
     choice: [
-      "พูดออกไปตรงๆ เพื่อให้เคลียร์และเดินหน้าต่อ",
+      "พูดออกไปตรง ๆ เพื่อให้เคลียร์และเดินหน้าต่อ",
       "ไกล่เกลี่ยให้ทุกคนฟังกันและคืนดีกันได้",
       "ถอยออกมาคิดก่อน แล้วค่อยกลับไปด้วยมุมมองใหม่",
       "คุยกับแต่ละคนแยกกันแล้วเสนอแนวทางแก้",
@@ -88,7 +88,7 @@ const listQuiz = [
       "ถ้าคุณได้รับหน้าที่เป็นบัดดี้ดูแลนักศึกษาต่างชาติแต่พวกเขาดูไม่อยากร่วมกิจกรรม คุณจะ…",
     choice: [
       "ชวนคุยเป็นการส่วนตัว เพื่อเข้าใจเหตุผลเบื้องหลังและรู้สึกปลอดภัย",
-      "วางแผนกิจกรรมเล็กๆ ที่ไม่กดดัน เช่น พาทัวร์คณะ พร้อมเตรียมแผนสำรอง",
+      "วางแผนกิจกรรมเล็ก ๆ ที่ไม่กดดัน เช่น พาทัวร์คณะ พร้อมเตรียมแผนสำรอง",
       "เล่าเรื่องประสบการณ์ของเพื่อนต่างชาติคนอื่นที่เคยรู้สึกแบบเดียวกัน",
       "ยืนยันจะอยู่ข้างเขาให้ไม่รู้สึกโดดเดี่ยว",
     ],
@@ -118,10 +118,9 @@ const listQuiz = [
 
 for (let i = 0; i < totalPages; i++) {
   const page = document.createElement("div");
-  page.className = "page";
+  page.className = "quiz-page";
   page.id = `page${i}`;
-  page.innerHTML =
-    "<style: font-size:24px>" + listQuiz[i].question + "</style>" + "</br>";
+  page.innerHTML = listQuiz[i].question;
 
   for (let j = 0; j < 4; j++) {
     const button = document.createElement("button");
@@ -202,6 +201,7 @@ function saveName() {
   let name = input.value;
   nameList.push(name);
 }
+
 function showAnswer(score) {
   if (score >= 0 && score <= 7) {
     return "Alchemoir";

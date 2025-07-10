@@ -116,11 +116,14 @@ const listQuiz = [
   },
 ];
 
+const listGIF = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"];
+
 for (let i = 0; i < totalPages; i++) {
   const page = document.createElement("div");
   page.className = "quiz-page";
   page.id = `page${i}`;
   page.innerHTML = listQuiz[i].question;
+  page.innerHTML = `<img src="images/${listGIF[i]}.GIF" class="gif" alt="GIF Questions">`;
 
   for (let j = 0; j < 4; j++) {
     const button = document.createElement("button");

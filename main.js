@@ -156,57 +156,26 @@ function countScore(value) {
   if (currentPage < totalPages) {
     showPage(currentPage);
   } else {
-    document.getElementById("Names").classList.add("active");
+    document.getElementById("name").classList.add("active");
     document.getElementById("type").classList.add("active");
   }
+}
 
 document.getElementById("submitname").addEventListener("click", function () {
   let userName = document.getElementById("nameInput").value.trim();
   let userHouse = showAnswer(score);
-  /*
-  let userId = document.getElementById("StudentId").value.trim();
-  if (!userName || !userId) {
-    alert("กรุณากรอกชื่อและรหัสให้ครบ");
+  if (!userName) {
+    alert("กรุณากรอกชื่อในช่องชื่อ");
     return;
   }
-  let isDuplicate = users.some(
-    (user) => user.id && user.id.toLowerCase() === userId.toLowerCase()
-  );
-  if (isDuplicate) {
-    alert("รหัสนี้ถูกใช้ไปแล้ว กรุณากรอกชื่อใหม่");
-    document.getElementById("StudentId").value = "";
-    document.getElementById("StudentId").focus();
-    return;
-  }
-  let idNumber = parseInt(userId, 10);
-  if (
-    isNaN(idNumber) ||
-    userId.length !== 7 ||
-    idNumber < 6801001 ||
-    idNumber > 6801300
-  ) {
-    alert("กรุณากรอกรหัสนักศึกษาให้ถูกต้อง");
-    document.getElementById("StudentId").value = "";
-    document.getElementById("StudentId").focus();
-    return;
-  }
-  */
-  users.push({ name: userName, House: userHouse });
+  users.push({ name: userName, house: userHouse });
   localStorage.setItem("users", JSON.stringify(users));
-  console.log("ข้อมูลของทุกคน:", users);
+  console.log("ข้อมูลของทุกคน: ", users);
   document.getElementById("name").classList.remove("active");
   document.getElementById("type").classList.remove("active");
   document.getElementById("resultPage").classList.add("active");
   document.getElementById("finalScore").innerText = showAnswer(score);
 });
-
-/*
-function saveName() {
-  let input = document.getElementById("nameInput");
-  let name = input.value;
-  nameList.push(name);
-}
-*/
 
 function showAnswer(score) {
   if (score >= 0 && score <= 7) {

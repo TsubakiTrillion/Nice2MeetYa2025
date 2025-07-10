@@ -111,6 +111,7 @@ p2 {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
 #nameInput {
   display: inline-block;
   padding: 12px 18px;
@@ -131,6 +132,7 @@ p2 {
   border: 1.5px solid #b58e6b;
   background-color: #fffaf5;
 }
+
 #StudentId {
   display: inline-block;
   padding: 12px 18px;

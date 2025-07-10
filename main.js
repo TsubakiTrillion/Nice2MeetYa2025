@@ -159,11 +159,12 @@ function countScore(value) {
     document.getElementById("Names").classList.add("active");
     document.getElementById("type").classList.add("active");
   }
-}
+
 document.getElementById("submitname").addEventListener("click", function () {
   let userName = document.getElementById("nameInput").value.trim();
-  let userId = document.getElementById("StudentId").value.trim();
   let userHouse = showAnswer(score);
+  /*
+  let userId = document.getElementById("StudentId").value.trim();
   if (!userName || !userId) {
     alert("กรุณากรอกชื่อและรหัสให้ครบ");
     return;
@@ -189,20 +190,23 @@ document.getElementById("submitname").addEventListener("click", function () {
     document.getElementById("StudentId").focus();
     return;
   }
-  users.push({ name: userName, id: userId, House: userHouse });
+  */
+  users.push({ name: userName, House: userHouse });
   localStorage.setItem("users", JSON.stringify(users));
   console.log("ข้อมูลของทุกคน:", users);
-  document.getElementById("Names").classList.remove("active");
+  document.getElementById("name").classList.remove("active");
   document.getElementById("type").classList.remove("active");
   document.getElementById("resultPage").classList.add("active");
   document.getElementById("finalScore").innerText = showAnswer(score);
 });
 
+/*
 function saveName() {
   let input = document.getElementById("nameInput");
   let name = input.value;
   nameList.push(name);
 }
+*/
 
 function showAnswer(score) {
   if (score >= 0 && score <= 7) {

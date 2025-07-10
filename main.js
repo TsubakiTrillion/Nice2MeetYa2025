@@ -122,8 +122,7 @@ for (let i = 0; i < totalPages; i++) {
   const page = document.createElement("div");
   page.className = "quiz-page";
   page.id = `page${i}`;
-  page.innerHTML = listQuiz[i].question;
-  page.innerHTML = `<img src="images/${listGIF[i]}.GIF" class="gif" alt="GIF Questions">`;
+  page.innerHTML = `${listQuiz[i].question}<br><img src="images/${listGIF[i]}.GIF" class="gif" alt="GIF Questions">`;
 
   for (let j = 0; j < 4; j++) {
     const button = document.createElement("button");

@@ -125,7 +125,7 @@ for (let i = 0; i < totalPages; i++) {
   for (let j = 0; j < 4; j++) {
     const button = document.createElement("button");
     button.innerHTML = listQuiz[i].choice[j];
-    button.className = "start-button";
+    button.className = "quiz-button";
     button.onclick = () => countScore(j);
     page.appendChild(button);
   }

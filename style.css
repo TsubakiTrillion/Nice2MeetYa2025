@@ -60,7 +60,7 @@ p2 {
 }
 
 .gif {
-  width: 150px;
+  height: 20svh;
 }
 
 .aboutusBox {
@@ -106,7 +106,7 @@ p2 {
   text-align: center;
   text-decoration: none;
   outline: none;
-  width: 250px;
+  width: 25vw;
   color: #4d2509;
   background-color: #d9c9ba;
   border: none;

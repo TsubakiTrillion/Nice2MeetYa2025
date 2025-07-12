@@ -42,7 +42,7 @@ body {
 }
 
 .result {
-  font-size: 40px;
+  font-size: 16px;
 }
 
 .description {
@@ -71,18 +71,18 @@ p3 {
   font-weight: 400;
   font-size: 16px;
   font-style: normal;
-  margin: 20dvw 0;
+  margin: 0 20dvw;
   text-align: center;
   line-height: 1.25;
 }
 
 h2 {
   font-family: "IBM Plex Sans Thai Looped", sans-serif;
-  font-weight: 600;
-  font-size: 32px;
+  font-weight: 500;
+  font-size: 24px;
   font-style: normal;
   text-align: center;
-  margin: 10dvw 0;
+  margin: 0 10dvw;
   line-height: 1;
 }
 
@@ -99,7 +99,7 @@ h2 {
 }
 
 .start-button {
-  display: inline-block;
+  display: flex;
   padding: 15px 25px;
   font-family: "IBM Plex Sans Thai Looped", sans-serif;
   font-weight: 400;

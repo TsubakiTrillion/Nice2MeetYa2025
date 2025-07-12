@@ -48,7 +48,7 @@ body {
 .description {
   font-size: 24px;
   text-align: center;
-  margin: 40dvw;
+  margin: 20dvw;
 }
 
 p1 {
@@ -64,6 +64,25 @@ p2 {
   font-weight: 300;
   font-size: 28px;
   font-style: normal;
+}
+
+p3 {
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  margin: 20dvw;
+  text-align: center;
+  line-height: 1;
+}
+
+h2 {
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  font-style: normal;
+  text-align: center;
+  line-height: 1;
 }
 
 .gif {
@@ -151,27 +170,6 @@ p2 {
 }
 
 #nameInput:focus {
-  box-shadow: 0 0 0 3px #d9c9ba, 0 4px #cbb9aa;
-  border: 1.5px solid #b58e6b;
-  background-color: #fffaf5;
-}
-
-#StudentId {
-  display: inline-block;
-  padding: 12px 18px;
-  font-family: "IBM Plex Sans Thai Looped", sans-serif;
-  font-size: 16px;
-  border: none;
-  border-radius: 12px;
-  background-color: #f4ece5;
-  color: #4d2509;
-  box-shadow: 0 4px #cbb9aa;
-  margin-bottom: 15px;
-  outline: none;
-  transition: box-shadow 0.2s, border-color 0.2s;
-}
-
-#StudentId:focus {
   box-shadow: 0 0 0 3px #d9c9ba, 0 4px #cbb9aa;
   border: 1.5px solid #b58e6b;
   background-color: #fffaf5;

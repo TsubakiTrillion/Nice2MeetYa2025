@@ -119,10 +119,12 @@ h2 {
   width: 75vw;
 }
 
-#link { color: #00b7ffe3; }
+.link {
+  color: #00b7ffe3;
+}
 
 .start-button {
-  display: flex;
+  display: inline-block;
   padding: 15px 25px;
   font-family: "IBM Plex Sans Thai Looped", sans-serif;
   font-weight: 400;

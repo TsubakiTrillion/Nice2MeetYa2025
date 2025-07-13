@@ -119,6 +119,8 @@ h2 {
   width: 75vw;
 }
 
+#link { color: #00b7ffe3; }
+
 .start-button {
   display: flex;
   padding: 15px 25px;

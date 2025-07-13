@@ -74,6 +74,25 @@ p3 {
   font-style: normal;
   margin: 0 20dvw;
   text-align: center;
+  text-wrap: pretty;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1.25;
+}
+
+ol {
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  font-style: normal;
+  margin: 0 20dvw;
+  text-align: center;
+  text-wrap: pretty;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   line-height: 1.25;
 }

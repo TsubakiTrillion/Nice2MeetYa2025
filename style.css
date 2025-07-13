@@ -72,9 +72,9 @@ p3 {
   font-weight: 400;
   font-size: 1rem;
   font-style: normal;
-  margin: 0 20dvw;
+  /* margin: 0 20dvw; */
   text-align: center;
-  text-wrap: pretty;
+  text-wrap: wrap;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,9 +87,9 @@ ol {
   font-weight: 400;
   font-size: 1rem;
   font-style: normal;
-  margin: 0 20dvw;
+  /*margin: 0 20dvw; */
   text-align: center;
-  text-wrap: pretty;
+  text-wrap: left;
   display: flex;
   justify-content: center;
   align-items: center;

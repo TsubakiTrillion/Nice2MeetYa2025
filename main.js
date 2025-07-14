@@ -167,14 +167,12 @@ document.getElementById("submitname").addEventListener("click", function () {
     alert("กรุณากรอกชื่อในช่องชื่อ");
     return;
   }
-  users.push({ name: userName, house: userHouse });
-  localStorage.setItem("users", JSON.stringify(users));
   console.log("ข้อมูลของทุกคน: ", users);
   document.getElementById("name").classList.remove("active");
   document.getElementById("type").classList.remove("active");
   document.getElementById("resultPage").classList.add("active");
-  document.getElementById("finalScore").innerText = showAnswer(score);
-  document.getElementById("finalDescription").innerText = showDescription(userHouse);
+  document.getElementById("finalScore").innerText = `${userHouse}.webp`;
+  document.getElementById("finalName").innerText = userName;
 });
 
 function showAnswer(score) {

@@ -178,8 +178,8 @@ document.getElementById("submitname").addEventListener("click", function () {
   document.getElementById("name").classList.remove("active");
   document.getElementById("type").classList.remove("active");
   document.getElementById("resultPage").classList.add("active");
-  document.getElementById("finalResult").appendChild(img);
-  document.getElementById("finalName").innerText = userName;
+  //document.getElementById("finalResult").appendChild(img);
+  //document.getElementById("finalName").innerText = userName;
 });
 
 function showAnswer(score) {

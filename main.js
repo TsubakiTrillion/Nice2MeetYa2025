@@ -158,14 +158,15 @@ function countScore(value) {
     showPage(currentPage);
   } else {
 
+    document.getElementById("name").classList.add("active");
+    document.getElementById("type").classList.add("active");
+    
     document.getElementById("submitname").addEventListener("click", function () {
       let userName = document.getElementById("nameInput").value.trim();
       if (!userName) {
         alert("กรุณากรอกชื่อในช่องชื่อ");
         return;
       }
-      document.getElementById("name").classList.add("active");
-      document.getElementById("type").classList.add("active");
     });
 
     document.getElementById("name").classList.remove("active");
@@ -174,7 +175,7 @@ function countScore(value) {
     let userHouse = showAnswer(score);
     let img = document.createElement("img");
     img.src = `images/${userHouse}.webp`;
-    
+
     document.getElementById("resultPage").classList.add("active");
     document.getElementById("finalResult").appendChild(img);
     document.getElementById("finalName").innerText = userName;

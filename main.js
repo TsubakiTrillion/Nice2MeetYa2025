@@ -118,6 +118,7 @@ const listQuiz = [
 const listGIF = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"];
 
 for (let i = 0; i < totalPages; i++) {
+
   const page = document.createElement("div");
   page.className = "quiz-page";
   page.id = `page${i}`;
@@ -131,8 +132,9 @@ for (let i = 0; i < totalPages; i++) {
     page.appendChild(button);
   }
 
-  page.innerHTML = "made by Siriraj Medical Students";
+  //page.innerHTML = "made by Siriraj Medical Students";
   quizContainer.appendChild(page);
+
 }
 
 function startQuiz() {

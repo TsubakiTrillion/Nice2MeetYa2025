@@ -154,13 +154,44 @@ function countScore(value) {
   score += value;
   hidePage(currentPage);
   currentPage++;
+
+  if (currentPage < totalPages) {
+    showPage(currentPage);
+  } else {
+    document.getElementById("name").classList.add("active");
+    document.getElementById("type").classList.add("active");
+  }
+}
+
+document.getElementById("submitname").addEventListener("click", function () {
+  let userName = document.getElementById("nameInput").value.trim();
+  let userHouse = showAnswer(score);
+  if (!userName) {
+    alert("กรุณากรอกชื่อในช่องชื่อ");
+    return;
+  }
+  users.push({ name: userName, house: userHouse });
+  localStorage.setItem("users", JSON.stringify(users));
+  console.log("ข้อมูลของทุกคน: ", users);
+  document.getElementById("name").classList.remove("active");
+  document.getElementById("type").classList.remove("active");
+  document.getElementById("resultPage").classList.add("active");
+  document.getElementById("finalScore").innerText = showAnswer(score);
+  document.getElementById("finalDescription").innerText = showDescription(userHouse);
+});
+
+/*
+function countScore(value) {
+  score += value;
+  hidePage(currentPage);
+  currentPage++;
   if (currentPage < totalPages) {
     showPage(currentPage);
   } else {
 
     document.getElementById("name").classList.add("active");
     document.getElementById("type").classList.add("active");
-    
+
     document.getElementById("submitname").addEventListener("click", function () {
       let userName = document.getElementById("nameInput").value.trim();
       if (!userName) {
@@ -181,6 +212,7 @@ function countScore(value) {
     document.getElementById("finalName").innerText = userName;
   }
 }
+*/
 
 function showAnswer(score) {
   if (score >= 0 && score <= 7) {

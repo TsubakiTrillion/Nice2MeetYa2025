@@ -131,6 +131,7 @@ for (let i = 0; i < totalPages; i++) {
     page.appendChild(button);
   }
 
+  page.innerHTML = "made by Siriraj Medical Students";
   quizContainer.appendChild(page);
 }
 
@@ -163,15 +164,19 @@ function countScore(value) {
 document.getElementById("submitname").addEventListener("click", function () {
   let userName = document.getElementById("nameInput").value.trim();
   let userHouse = showAnswer(score);
+
   if (!userName) {
     alert("กรุณากรอกชื่อในช่องชื่อ");
     return;
   }
-  console.log("ข้อมูลของทุกคน: ", users);
+
+  let img = document.createElement("img");
+  img.src = `images/${userHouse}.webp`;
+
   document.getElementById("name").classList.remove("active");
   document.getElementById("type").classList.remove("active");
   document.getElementById("resultPage").classList.add("active");
-  document.getElementById("finalScore").innerText = `${userHouse}.webp`;
+  document.getElementById("finalResult").appendChild(img);
   document.getElementById("finalName").innerText = userName;
 });
 

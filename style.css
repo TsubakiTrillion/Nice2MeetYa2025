@@ -19,11 +19,11 @@ body {
   height: auto;
   margin: 0;
   background-color: #6e4f32;
-  color: rgb(228, 226, 206);
+  color: #e4e2ce;
 }
 
 .page {
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
@@ -37,7 +37,7 @@ body {
   font-size: 1.5rem;
   font-weight: 600;
   margin: 50px;
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
@@ -48,7 +48,9 @@ body {
 }
 
 .result {
-  font-size: 1rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .description {
@@ -85,7 +87,7 @@ p3 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  line-height: 1.25;
+  line-height: 2;
 }
 
 ol {
@@ -125,8 +127,20 @@ h2 {
   width: 75vw;
 }
 
-.link {
-  color: #00b7ffe3;
+a:link {
+  color: #08a8e7;
+}
+
+a:visited {
+  color: #59048a;
+}
+
+a:hover {
+  color: #4d2509;
+}
+
+a:active {
+  color: #e4e2ce;
 }
 
 .start-button {

@@ -177,7 +177,7 @@ document.getElementById("submitname").addEventListener("click", function () {
   document.getElementById("name").classList.remove("active");
   document.getElementById("type").classList.remove("active");
   document.getElementById("resultPage").classList.add("active");
-  document.getElementById("finalResult").style.backgroundImage = src(`images/${userHouse}.webp`);
+  document.getElementById("finalResult").style.backgroundImage = `images/${userHouse}.webp`;
   document.getElementById("finalName").innerText = userName;
 
 });

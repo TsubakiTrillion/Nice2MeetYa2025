@@ -164,17 +164,23 @@ function countScore(value) {
 }
 
 document.getElementById("submitname").addEventListener("click", function () {
+  
   let userName = document.getElementById("nameInput").value.trim();
-  let userHouse = showAnswer(score);
   if (!userName) {
     alert("กรุณากรอกชื่อในช่องชื่อ");
     return;
   }
+
+  let userHouse = showAnswer(score);
+  let img = document.createElement("img");
+  img.src = `images/${userHouse}.webp`;
+
   document.getElementById("name").classList.remove("active");
   document.getElementById("type").classList.remove("active");
   document.getElementById("resultPage").classList.add("active");
-  document.getElementById("finalResult").innerText = userHouse;
+  document.getElementById("finalResult").appendChild(img);
   document.getElementById("finalName").innerText = userName;
+  
 });
 
 /*

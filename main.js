@@ -177,45 +177,11 @@ document.getElementById("submitname").addEventListener("click", function () {
   document.getElementById("name").classList.remove("active");
   document.getElementById("type").classList.remove("active");
   document.getElementById("resultPage").classList.add("active");
-  document.getElementById("finalResult").style.backgroundImage = `url(images/${userHouse}.webp)`;
+  document.getElementById("finalResult").style.backgroundImage = src(`images/${userHouse}.webp`);
   document.getElementById("finalName").innerText = userName;
 
 });
-
-/*
-function countScore(value) {
-  score += value;
-  hidePage(currentPage);
-  currentPage++;
-  if (currentPage < totalPages) {
-    showPage(currentPage);
-  } else {
-
-    document.getElementById("name").classList.add("active");
-    document.getElementById("type").classList.add("active");
-
-    document.getElementById("submitname").addEventListener("click", function () {
-      let userName = document.getElementById("nameInput").value.trim();
-      if (!userName) {
-        alert("กรุณากรอกชื่อในช่องชื่อ");
-        return;
-      }
-    });
-
-    document.getElementById("name").classList.remove("active");
-    document.getElementById("type").classList.remove("active");
-
-    let userHouse = showAnswer(score);
-    let img = document.createElement("img");
-    img.src = `images/${userHouse}.webp`;
-
-    document.getElementById("resultPage").classList.add("active");
-    document.getElementById("finalResult").appendChild(img);
-    document.getElementById("finalName").innerText = userName;
-  }
-}
-*/
-
+ss
 function showAnswer(score) {
   if (score >= 0 && score <= 7) {
     return "Alchemoir";

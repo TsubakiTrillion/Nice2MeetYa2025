@@ -173,8 +173,8 @@ document.getElementById("submitname").addEventListener("click", function () {
   document.getElementById("name").classList.remove("active");
   document.getElementById("type").classList.remove("active");
   document.getElementById("resultPage").classList.add("active");
-  document.getElementById("finalScore").innerText = showAnswer(score);
-  document.getElementById("finalDescription").innerText = showDescription(userHouse);
+  document.getElementById("finalResult").innerText = userHouse;
+  document.getElementById("finalName").innerText = userName;
 });
 
 /*

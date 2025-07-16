@@ -173,15 +173,17 @@ document.getElementById("submitname").addEventListener("click", function () {
 
   let userHouse = showAnswer(score);
   let img = document.createElement("img");
+  img.src = `images/${userHouse}.webp`;
+  img.alt = userHouse;
 
   document.getElementById("name").classList.remove("active");
   document.getElementById("type").classList.remove("active");
   document.getElementById("resultPage").classList.add("active");
-  document.getElementById("finalResult").style.backgroundImage = `images/${userHouse}.webp`;
+  document.getElementById("finalResult").appendChild(img);
   document.getElementById("finalName").innerText = userName;
 
 });
-ss
+
 function showAnswer(score) {
   if (score >= 0 && score <= 7) {
     return "Alchemoir";

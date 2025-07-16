@@ -173,12 +173,11 @@ document.getElementById("submitname").addEventListener("click", function () {
 
   let userHouse = showAnswer(score);
   let img = document.createElement("img");
-  img.src = `images/${userHouse}.webp`;
 
   document.getElementById("name").classList.remove("active");
   document.getElementById("type").classList.remove("active");
   document.getElementById("resultPage").classList.add("active");
-  document.getElementById("finalResult").style.backgroundImage = img.src;
+  document.getElementById("finalResult").style.backgroundImage = `url(images/${userHouse}.webp)`;
   document.getElementById("finalName").innerText = userName;
 
 });

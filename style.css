@@ -25,6 +25,7 @@ body {
   display: none;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
 }
 
@@ -53,7 +54,7 @@ body {
 }
 
 .final-result {
-  width: 100dvw; 
+  width: 100%; 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

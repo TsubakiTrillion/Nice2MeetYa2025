@@ -178,7 +178,7 @@ document.getElementById("submitname").addEventListener("click", function () {
   document.getElementById("name").classList.remove("active");
   document.getElementById("type").classList.remove("active");
   document.getElementById("resultPage").classList.add("active");
-  document.getElementById("finalResult").style.backgroundImage = img.src;
+  document.getElementById("finalResult").style.backgroundImage = img;
   document.getElementById("finalName").innerText = userName;
 
 });

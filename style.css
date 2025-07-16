@@ -48,6 +48,8 @@ body {
 }
 
 .final-result {
+  background-image: url("images/n2mylogo.webp");
+  background-size: contain;
   background-repeat: no-repeat;
   background-size: contain;
 }

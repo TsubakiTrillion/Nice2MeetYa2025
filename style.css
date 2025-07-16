@@ -51,7 +51,10 @@ body {
   background-image: url("images/n2mylogo.webp");
   background-size: contain;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-position: center;
+  width: 300px;
+  height: 400px;
+  display: flex;
 }
 
 .name {

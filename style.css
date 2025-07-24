@@ -26,11 +26,16 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 5rem;
 }
 
 .page.active {
   display: flex;
+}
+
+#type.active {
+  align-items: center;
+  justify-content: center;
 }
 
 .quiz-page {
@@ -57,7 +62,7 @@ body {
   display: flex;
 }
 
-#finalName {
+#finalName.active {
   width: 100%;
   height: 100%;
   display: flex;

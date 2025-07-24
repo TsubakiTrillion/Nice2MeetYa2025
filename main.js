@@ -180,8 +180,6 @@ document.getElementById("submitname").addEventListener("click", function () {
   document.getElementById("resultPage").classList.add("active");
   document.getElementById("finalResult").appendChild(img);
   document.getElementById("finalName").innerText = userName;
-  //document.getElementById("finalResult").appendChild(img);
-  //document.getElementById("finalName").innerText = userName;
 });
 
 function showAnswer(score) {
@@ -193,20 +191,5 @@ function showAnswer(score) {
     return "Noxmortha";
   } else if (score >= 24 && score <= 30) {
     return "Arcarum";
-  }
-}
-
-function showDescription(userHouse) {
-  switch (userHouse) {
-    case "Alchemoir":
-      return "‘ฉลาดลึก หมั่นฝึกวิชา สรรสร้างสรรพสิ่ง’<br>ยินดีด้วย ! ท่านได้รับคัดเลือกเข้าสู่บ้าน Alchemoir เหล่านักเล่นแร่แปรธาตุทั้งหลาย สีทองแห่งความเมตตาที่ส่องประกาย การกระทำฉลาดลึกล้ำเหลือคณานักของพวกท่านเป็นคุณสมบัติที่ควรค่าแก่การรักษาไว้";
-    case "Verdanthorn":
-      return "‘ทะเยอทะยาน รอบรู้ เป็นผู้นำ’<br>ยินดีด้วย ! สายใยสีเขียวที่ถักทอระหว่างพวกท่านได้นำพาสู่บ้าน Verdanthorn ความทะเยอทะยานก็เปรียบเสมือนเถาวัลย์ที่เจริญไปอย่างไม่หยุดยั้งตามสัญชาตญาณ พวกท่านจะเป็นผู้นำที่เปี่ยมด้วยความสามารถ คอยพาทุกคนสู่จุดหมาย";
-    case "Noxmortha":
-      return "‘ฉลาดรู้รอบด้าน ลึกลับ หาตัวจับยาก’<br>ยินดีด้วย ! ท่านได้รับคัดเลือกเข้าสู่บ้าน Noxmortha ว่ากันว่าศาสตร์แห่งการปรุงยาสีอะเมทิสต์เป็นวิชาแห่งความละเอียดอ่อน ทุกส่วนผสมชี้เป็นชี้ตาย เพราะฉะนั้นท่านผู้มีความละเอียดรอบคอบรู้รอบทุกด้านจึงถูกคัดเลือกสู่บ้านของเรา";
-    case "Arcarum":
-      return "‘กล้าหาญ เสียสละ คอยผดุงความยุติธรรม’<br>ยินดีด้วย ! ดาบและคทาสีแดงฉานแห่งบ้าน Arcarum ได้เชื่อมต่อกับหัวใจที่เปี่ยมด้วยความกล้าของท่านแล้ว ขอให้มนตราแห่งความยุติธรรมและเสียสละสถิตอยู่กับตัวท่านตลอดไป ยินดีต้อนรับสู่บ้านของเรา";
-    default:
-      return "พบปัญหาขณะแสดงคำอธิบายบ้าน กรุณาลองใหม่อีกครั้ง";
   }
 }

@@ -172,14 +172,14 @@ document.getElementById("submitname").addEventListener("click", function () {
   }
 
   let userHouse = showAnswer(score);
-  const page = document.createElement("div");
+  let img = document.createElement("img");
   img.src = `images/${userHouse}.webp`;
   img.alt = userHouse;
 
   document.getElementById("name").classList.remove("active");
   document.getElementById("type").classList.remove("active");
   document.getElementById("resultPage").classList.add("active");
-  document.getElementById("finalResult").appendChild(img);
+  document.getElementById("finalResult").style.backgroundImage = img.src;
   document.getElementById("finalName").innerText = userName;
 
 });

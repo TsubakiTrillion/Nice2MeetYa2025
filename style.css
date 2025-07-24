@@ -97,6 +97,7 @@ p3 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 100%;
 }
 
 ol {

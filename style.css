@@ -54,6 +54,7 @@ body {
   align-items: center;
   object-fit: contain;
   justify-content: center;
+  height: 50vh;
 }
 
 .name {
@@ -92,6 +93,7 @@ p3 {
   font-size: 1rem;
   font-style: normal;
   text-align: center;
+  line-height: 1;
   text-wrap: wrap;
   display: flex;
   justify-content: center;

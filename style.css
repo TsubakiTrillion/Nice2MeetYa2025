@@ -52,7 +52,7 @@ body {
   display: flex; 
   flex-direction: column;
   align-items: center;
-  height: 5px;
+  height: 25dvh;
   justify-content: center;
 }
 

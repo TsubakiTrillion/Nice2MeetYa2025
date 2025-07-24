@@ -28,7 +28,6 @@ body {
   justify-content: center;
   margin: 20px;
   gap: 1rem;
-  line-height: 1.5;
 }
 
 .page.active {
@@ -95,7 +94,7 @@ p3 {
   font-size: 1rem;
   font-style: normal;
   text-align: center;
-  line-height: 1;
+  line-height: 1.25;
   text-wrap: wrap;
   display: flex;
   justify-content: center;

@@ -26,7 +26,9 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 2.5rem;
+  margin: 25px;
+  padding: 20px;
 }
 
 .page.active {
@@ -51,9 +53,8 @@ body {
   display: flex; 
   flex-direction: column;
   align-items: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto 100%;
+  height: 100vh;
+  justify-content: center;
 }
 
 .name {
@@ -88,7 +89,7 @@ p2 {
 p3 {
   font-family: "IBM Plex Sans Thai Looped", sans-serif;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-style: normal;
   /* margin: 0 20dvw; */
   text-align: center;

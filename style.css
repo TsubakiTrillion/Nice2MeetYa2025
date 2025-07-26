@@ -34,16 +34,7 @@ body {
   display: flex;
 }
 
-.resultPage {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  gap: 0;
-}
-
-.resultPage.active {
+#resultPage {
   display: flex;
 }
 

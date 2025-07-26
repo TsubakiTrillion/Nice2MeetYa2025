@@ -52,6 +52,7 @@ body {
   position: relative;
   text-align: center;
   display: none;
+  margin: 0;
 }
 
 #resultPage.active {

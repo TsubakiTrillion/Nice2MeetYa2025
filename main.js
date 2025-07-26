@@ -174,6 +174,12 @@ document.getElementById("submitname").addEventListener("click", function () {
   let img = document.createElement("img");
   img.src = `images/${userHouse}.webp`;
 
+  img.style.height = "50vh";
+  img.style.width = "100%";
+  img.style.objectFit = "contain";
+  img.style.alignItems = "center";
+  img.style.justifyContent = "center";
+
   document.getElementById("name").classList.remove("active");
   document.getElementById("type").classList.remove("active");
   document.getElementById("resultPage").classList.add("active");

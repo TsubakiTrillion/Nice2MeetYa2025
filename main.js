@@ -174,10 +174,9 @@ document.getElementById("submitname").addEventListener("click", function () {
   let img = document.createElement("img");
   img.src = `images/${userHouse}.webp`;
 
-  img.style.height = "100vh";
-  img.style.width = "100%";
+  img.style.height = "1000px";
+  img.style.width = "auto";
   img.style.objectFit = "contain";
-  img.style.alignItems = "center";
   img.style.justifyContent = "center";
 
   document.getElementById("name").classList.remove("active");
@@ -185,7 +184,7 @@ document.getElementById("submitname").addEventListener("click", function () {
   document.getElementById("resultPage").classList.add("active");
   document.getElementById("finalResult").appendChild(img);
   document.getElementById("finalName").innerText = userName;
-  
+
 });
 
 function showAnswer(score) {

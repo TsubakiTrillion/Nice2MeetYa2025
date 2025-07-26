@@ -54,7 +54,7 @@ body {
   display: none;
 }
 
-#resultPage {
+#resultPage.active {
   display: flex;
 }
 

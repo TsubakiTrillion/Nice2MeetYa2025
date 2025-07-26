@@ -179,13 +179,13 @@ document.getElementById("submitname").addEventListener("click", function () {
   img.style.objectFit = "contain";
   img.style.alignItems = "center";
   img.style.justifyContent = "center";
-  page.style.margin = "0";
 
   document.getElementById("name").classList.remove("active");
   document.getElementById("type").classList.remove("active");
   document.getElementById("resultPage").classList.add("active");
   document.getElementById("finalResult").appendChild(img);
   document.getElementById("finalName").innerText = userName;
+  
 });
 
 function showAnswer(score) {

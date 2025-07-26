@@ -120,14 +120,14 @@ const listGIF = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"];
 for (let i = 0; i < totalPages; i++) {
 
   const page = document.createElement("div");
-  page.className = "quiz-page";
+  page.className = "quizPage";
   page.id = `page${i}`;
   page.innerHTML = `${listQuiz[i].question}<br><img src="images/${listGIF[i]}.GIF" class="gif" alt="GIF Questions">`;
 
   for (let j = 0; j < 4; j++) {
     const button = document.createElement("button");
     button.innerHTML = listQuiz[i].choice[j];
-    button.className = "quiz-button";
+    button.className = "quizButton";
     button.onclick = () => countScore(j);
     page.appendChild(button);
   }

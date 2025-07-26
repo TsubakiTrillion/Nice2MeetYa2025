@@ -174,9 +174,9 @@ document.getElementById("submitname").addEventListener("click", function () {
   let img = document.createElement("img");
   img.src = `images/${userHouse}.webp`;
 
-  img.style.height = "1000px";
+  img.style.height = "800px";
   img.style.width = "auto";
-  img.style.objectFit = "cover";
+  img.style.objectFit = "contain";
   img.style.justifyContent = "center";
 
   document.getElementById("name").classList.remove("active");

@@ -176,7 +176,7 @@ document.getElementById("submitname").addEventListener("click", function () {
 
   //img.style.height = "1000px";
   img.style.width = "auto";
-  img.style.height = "80vh";
+  img.style.height = "80dvh";
   img.style.objectFit = "contain";
   img.style.justifyContent = "center";
 

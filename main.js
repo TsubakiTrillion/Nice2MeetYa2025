@@ -132,11 +132,6 @@ for (let i = 0; i < totalPages; i++) {
     page.appendChild(button);
   }
 
-  const credit = document.createElement("p3");
-  credit.textContent = "made by Siriraj Medical Students";
-  credit.className = "credit";
-  page.appendChild(credit);
-
   quizContainer.appendChild(page);
 
 }

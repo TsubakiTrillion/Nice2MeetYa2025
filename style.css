@@ -65,12 +65,12 @@ body {
   justify-content: center;
   font-family: "IBM Plex Sans Thai Looped", sans-serif;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 5%;
   color: black;
   position: absolute;
   padding: 25px;
-  top: 45%;
-  left: 25%;
+  top: 47%;
+  left: 27%;
   transform: rotate(-4deg);
 }
 

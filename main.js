@@ -132,7 +132,7 @@ for (let i = 0; i < totalPages; i++) {
     page.appendChild(button);
   }
 
-  page.innerHTML = "made by Siriraj Medical Students";
+  page.innerHTML += "<p3>made by Siriraj Medical Students</p3>";
   quizContainer.appendChild(page);
 
 }

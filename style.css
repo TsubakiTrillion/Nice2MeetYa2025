@@ -61,17 +61,17 @@ body {
 .name {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   font-family: "IBM Plex Sans Thai Looped", sans-serif;
   font-weight: 400;
-  font-size: 0.5rem;
+  font-size: 1rem;
   color: black;
   position: absolute;
   padding: 25px;
-  top: 50%;
+  top: 45%;
   left: 25%;
-  transform: rotate(-5deg);
+  transform: rotate(-4deg);
 }
 
 p1 {

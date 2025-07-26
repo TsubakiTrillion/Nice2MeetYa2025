@@ -34,10 +34,6 @@ body {
   display: flex;
 }
 
-#resultPage {
-  display: flex;
-}
-
 .quizPage {
   font-size: 1.5rem;
   font-weight: 600;
@@ -52,6 +48,16 @@ body {
   display: flex;
 }
 
+#resultPage {
+  position: relative;
+  text-align: center;
+  display: none;
+}
+
+#resultPage {
+  display: flex;
+}
+
 .name {
   display: flex;
   flex-direction: column;
@@ -61,11 +67,10 @@ body {
   font-weight: 400;
   font-size: 0.5rem;
   color: black;
-  text-align: center;
   position: absolute;
   padding: 25px;
-  top: 50vh;
-  left: 25vw;
+  top: 50%;
+  left: 25%;
   transform: rotate(-5deg);
 }
 

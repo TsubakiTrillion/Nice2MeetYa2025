@@ -69,8 +69,8 @@ body {
   font-size: 1rem;
   color: black;
   position: absolute;
-  top: 600px;
-  left: 25px;
+  top: 400px;
+  left: 50px;
   transform: rotate(-3deg);
 }
 

@@ -85,17 +85,17 @@ p1 {
 p2 {
   font-family: "Harry P", sans-serif;
   font-weight: 300;
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-style: normal;
 }
 
 p3 {
   font-family: "IBM Plex Sans Thai Looped", sans-serif;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-style: normal;
   text-align: center;
-  line-height: 1.25;
+  line-height: 1.5;
   text-wrap: wrap;
   display: flex;
   justify-content: center;
@@ -123,7 +123,7 @@ h2 {
 }
 
 .aboutusBox {
-  width: 75vw;
+  width: 80vw;
 }
 
 a:link {

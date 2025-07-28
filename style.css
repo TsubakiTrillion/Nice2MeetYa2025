@@ -71,7 +71,7 @@ body {
   position: absolute;
   top: 375px;
   left: 90px;
-  transform: rotate(-3deg);
+  /* transform: rotate(-3deg); */
 }
 
 p1 {

@@ -188,13 +188,13 @@ document.getElementById("submitname").addEventListener("click", function () {
 });
 
 function showAnswer(score) {
-  if (score >= 0 && score <= 7) {
+  if (score >= 0 && score <= 9) {
     return "Alchemoir";
-  } else if (score >= 8 && score <= 15) {
+  } else if (score >= 10 && score <= 14) {
     return "Verdanthorn";
-  } else if (score >= 16 && score <= 23) {
+  } else if (score >= 15 && score <= 19) {
     return "Noxmortha";
-  } else if (score >= 24 && score <= 30) {
+  } else if (score >= 20 && score <= 30) {
     return "Arcarum";
   }
 }
